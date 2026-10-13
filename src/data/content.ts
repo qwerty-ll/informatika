@@ -4,8 +4,8 @@
 export const TUTOR_NAME = 'Имя Фамилия'; // TODO: ваше имя
 
 export const CONTACTS = {
-  vk: 'https://vk.com/username', // TODO: ссылка на ваш ВК
-  email: 'hello@example.com', // TODO: ваша почта
+  vk: 'https://vk.ru/llllqwertyllll',
+  email: '7kan06@inbox.ru',
 };
 
 // Куда ведёт главная кнопка «Записаться» в футере
