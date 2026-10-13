@@ -25,7 +25,7 @@ export default function Footer() {
           className="max-w-[560px] leading-relaxed text-accent-pale"
           style={{ fontSize: 'clamp(1rem, 1.8vw, 1.25rem)' }}
         >
-          Запишитесь на пробное занятие за 800&nbsp;₽: познакомимся, определим уровень и составим план. Без предоплаты.
+          Запишитесь на пробное занятие за 800&nbsp;₽: познакомимся, определим уровень и составим план.
         </p>
         <ContactButton href={BOOKING_LINK} label="Записаться на пробное" variant="light" />
         <ul className="mt-2 flex flex-wrap justify-center gap-3">

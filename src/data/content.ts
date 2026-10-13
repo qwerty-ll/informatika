@@ -116,7 +116,7 @@ export const SERVICES: Service[] = [
   },
 ];
 
-export const SERVICES_NOTE = 'Без предоплаты · индивидуально или в группе';
+export const SERVICES_NOTE = 'Индивидуально или в группе';
 
 export interface LessonStep {
   number: string;
@@ -149,7 +149,7 @@ export const LESSON_STEPS: LessonStep[] = [
     category: 'Удобно',
     name: 'Гибкий формат',
     text: 'Занимаемся в любой день недели, длительность курса — по договорённости. Если сроки горят, сделаем экспресс-подготовку.',
-    points: ['Каждый день', 'Экспресс-подготовка', 'Без предоплаты'],
+    points: ['Каждый день', 'Экспресс-подготовка', 'Гибкий график'],
     code: '# занимаемся в любой день\ndays = ["пн", "вт", "ср", "чт",\n        "пт", "сб", "вс"]\nprint(len(days))  # 7',
   },
 ];
