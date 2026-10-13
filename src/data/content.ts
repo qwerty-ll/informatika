@@ -1,7 +1,7 @@
 // Единое место для всего контента сайта.
 // Всё, что помечено TODO, — заглушки: замените на свои данные.
 
-export const TUTOR_NAME = 'Имя Фамилия'; // TODO: ваше имя
+export const TUTOR_NAME = 'Макар Смирнов';
 
 export const CONTACTS = {
   vk: 'https://vk.ru/llllqwertyllll',
