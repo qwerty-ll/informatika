@@ -1,0 +1,103 @@
+@import 'tailwindcss';
+
+/*
+  Палитра «светлый IDE»: холодный светлый холст с точечной сеткой, графитово-синий текст,
+  синий акцент и холодные пастельные плитки.
+  Контраст основного текста ≈ 15:1, вторичного ≈ 6:1, белого на акценте ≈ 5.7:1 (WCAG AA).
+*/
+@theme {
+  --font-sans: 'Inter', system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, monospace;
+
+  --color-canvas: #f5f7fb;
+  --color-surface: #ffffff;
+  --color-sand: #eef2f8;
+  --color-line: #dce2ec;
+  --color-ink: #1b2130;
+  --color-muted: #556075;
+
+  --color-accent: #3b5bdb;
+  --color-accent-hover: #3451c7;
+  --color-accent-soft: #e3e9ff;
+  --color-accent-pale: #e8edff;
+
+  --color-tint-blue: #e3e9ff;
+  --color-tint-cyan: #dcf2f6;
+  --color-tint-green: #def5e6;
+  --color-tint-violet: #ece7ff;
+
+  --shadow-soft: 0 1px 2px rgb(27 33 48 / 0.04), 0 8px 24px rgb(27 33 48 / 0.06);
+  --shadow-lift: 0 2px 4px rgb(27 33 48 / 0.05), 0 18px 44px rgb(27 33 48 / 0.1);
+}
+
+@layer base {
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  html,
+  body,
+  #root {
+    background: var(--color-canvas);
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    color: var(--color-ink);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  ::selection {
+    background: var(--color-accent-soft);
+    color: var(--color-ink);
+  }
+
+  a:focus-visible {
+    outline: 3px solid var(--color-accent);
+    outline-offset: 3px;
+    border-radius: 9999px;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+  }
+}
+
+/* точечная сетка, как холст в редакторе */
+.dot-grid {
+  background-image: radial-gradient(circle, rgb(27 33 48 / 0.09) 1px, transparent 1.2px);
+  background-size: 24px 24px;
+}
+
+/* мигающий курсор терминала */
+@keyframes caret-blink {
+  0%,
+  49% {
+    opacity: 1;
+  }
+  50%,
+  100% {
+    opacity: 0;
+  }
+}
+
+.caret {
+  animation: caret-blink 1.1s steps(1) infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .caret {
+    animation: none;
+  }
+}
