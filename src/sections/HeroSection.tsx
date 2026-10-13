@@ -28,9 +28,14 @@ export default function HeroSection() {
               <li key={link.label}>
                 <a
                   href={link.href}
-                  className="font-mono text-sm text-muted transition-colors duration-200 hover:text-ink"
+                  className="group relative block py-1 font-mono text-sm text-muted transition-colors duration-100 hover:text-accent focus-visible:text-accent"
                 >
                   {link.label}
+                  {/* линия выезжает слева при наведении и уезжает вправо, когда курсор уходит */}
+                  <span
+                    aria-hidden="true"
+                    className="absolute inset-x-0 -bottom-0.5 h-0.5 origin-right scale-x-0 rounded-full bg-accent transition-transform duration-200 ease-[cubic-bezier(0.2,0,0,1)] group-hover:origin-left group-hover:scale-x-100 group-focus-visible:origin-left group-focus-visible:scale-x-100 motion-reduce:transition-none"
+                  />
                 </a>
               </li>
             ))}
