@@ -11,7 +11,7 @@ export const CONTACTS = {
 // Куда ведёт главная кнопка «Записаться» в футере
 export const BOOKING_LINK = CONTACTS.vk;
 
-export const HERO_PORTRAIT = '/jack.png'; // TODO: положите своё фото в /public и укажите имя файла
+export const HERO_PORTRAIT = `${import.meta.env.BASE_URL}jack.png`; // TODO: положите своё фото в /public и укажите имя файла
 
 export const HERO_TAGLINE = 'Репетитор по информатике для школьников 5–11 классов';
 

@@ -26,3 +26,9 @@ npm run preview  # посмотреть собранную версию
 Главный экран → лента тем → Обо мне → Цены → Как проходят занятия → Контакты.
 
 Цвета и шрифты — токены в `src/index.css` (блок `@theme`).
+
+## Публикация
+
+Сайт: https://qwerty-ll.github.io/informatika/
+
+При каждом пуше в `main` GitHub Actions собирает проект и выкладывает его на GitHub Pages (`.github/workflows/deploy.yml`).
