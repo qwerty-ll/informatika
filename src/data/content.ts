@@ -13,10 +13,10 @@ export const BOOKING_LINK = CONTACTS.vk;
 
 export const HERO_PORTRAIT = '/jack.png'; // TODO: положите своё фото в /public и укажите имя файла
 
-export const HERO_TAGLINE = 'Репетитор по информатике для школьников 1–11 классов и студентов';
+export const HERO_TAGLINE = 'Репетитор по информатике для школьников 5–11 классов и студентов';
 
 // Плашки вокруг портрета на главном экране
-export const HERO_CHIPS = ['ОГЭ', 'Python', '1–11 класс', 'Онлайн'];
+export const HERO_CHIPS = ['ОГЭ', 'Python', '5–11 класс', 'Онлайн'];
 
 export const NAV_LINKS = [
   { label: 'Обо мне', href: '#about' },
@@ -37,7 +37,7 @@ export const MARQUEE_TILES: MarqueeTile[] = [
   { tag: '5–7 класс', title: 'Алгоритмы и исполнители' },
   { tag: 'Логика', title: 'Таблицы истинности', code: 'print(int(not x or y))' },
   { tag: 'Python', title: 'Циклы', code: 'for i in range(1, 6):\n    print(i * i)' },
-  { tag: 'Начальная школа', title: 'Информатика через игру' },
+  { tag: '5–6 класс', title: 'Информатика через игру' },
   { tag: 'ОГЭ · №15', title: 'Программирование', code: 'n = int(input())\nprint(sum(range(n + 1)))' },
   { tag: 'ОГЭ · №14', title: 'Электронные таблицы', code: '=СУММЕСЛИ(A2:A100; ">50")' },
   { tag: 'Вуз', title: 'Лабораторные работы' },
@@ -62,7 +62,7 @@ export const ABOUT_FACTS: [string, string][] = [
   ['учусь', 'КГУ, Высшая ИТ-школа'],
   ['специальность', 'Разработчик ПО (2028)'],
   ['опыт', '1–3 года'],
-  ['ученики', '1–11 класс и студенты'],
+  ['ученики', '5–11 класс и студенты'],
   ['формат', 'онлайн, индивидуально и в группах'],
   ['расписание', 'каждый день'],
 ];
